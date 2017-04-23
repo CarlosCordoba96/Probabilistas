@@ -48,7 +48,7 @@ public abstract class Funciones {
 	public abstract double f(double x);
 	public abstract double area();//devuelve, si podemos hacerlo, el area integrando de verdad
 	//(por ejemlo si f=x^3 la primitiva es x^4/4. Si no lo sabemos integrar devolvemos 0.
-			public double areaRieman(int intervalos){
+	public double areaRieman(int intervalos){
 		double suma=0.0;
 		double inc=amplitud()/intervalos;
 		double x=linf();
