@@ -21,12 +21,13 @@ public class reinas {
 		}
 	}
 	private static void pinta(String string, int[] sol) {
-		System.out.println(string+"\n");
+		System.out.println(string+" ms\n");
 		System.out.print("[");
 		for(int i=0;i<sol.length;i++){
 			System.out.print(sol[i]+" ");
 		}
 		System.out.print("]\n");
+		imprimir(sol);
 	}
 	private static void lasVegas(int r[],int[] sol){
 		boolean vale=false;
@@ -66,5 +67,19 @@ public class reinas {
 		}
 		return !fracaso;
 	}
-
+	private static void imprimir(int [] sol){
+		
+		for(int i=0;i<sol.length;i++){
+			for(int j=0;j<sol.length;j++){
+				if(j==sol[i]){
+					System.out.print("1 ");
+				}else{
+					System.out.print("0 ");
+				}
+				
+				
+			}
+			System.out.println();
+		}
+	}
 }
